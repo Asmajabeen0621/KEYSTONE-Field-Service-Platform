@@ -1,0 +1,1 @@
+package com.zidio.keystone.repository; import com.zidio.keystone.domain.*; import org.springframework.data.jpa.repository.*; import java.util.*; public interface AppUserRepository extends JpaRepository<AppUser,Long>{ Optional<AppUser> findByEmail(String email); List<AppUser> findByRole(Role role); }

@@ -1,0 +1,1 @@
+package com.zidio.keystone.controller; import org.springframework.web.bind.annotation.*; import java.time.*; import java.util.*; @RestController @RequestMapping("/api") public class HealthController { @GetMapping("/health") public Map<String,Object> health(){return Map.of("status","UP","service","KEYSTONE","timestamp",Instant.now());} }

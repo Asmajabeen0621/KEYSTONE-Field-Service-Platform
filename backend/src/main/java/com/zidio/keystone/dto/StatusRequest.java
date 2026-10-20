@@ -1,0 +1,1 @@
+package com.zidio.keystone.dto; import com.zidio.keystone.domain.WorkOrderStatus; import jakarta.validation.constraints.*; public record StatusRequest(@NotNull WorkOrderStatus status,@Size(max=1000) String note) {}

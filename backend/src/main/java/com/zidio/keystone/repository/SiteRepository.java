@@ -1,0 +1,1 @@
+package com.zidio.keystone.repository; import com.zidio.keystone.domain.*; import org.springframework.data.jpa.repository.*; import java.util.*; public interface SiteRepository extends JpaRepository<Site,Long>{ List<Site> findByCustomerId(Long customerId); }

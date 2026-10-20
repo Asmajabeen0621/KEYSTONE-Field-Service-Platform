@@ -1,0 +1,1 @@
+package com.zidio.keystone.repository; import com.zidio.keystone.domain.*; import org.springframework.data.jpa.repository.*; import java.util.*; public interface StatusHistoryRepository extends JpaRepository<StatusHistory,Long>{ List<StatusHistory> findByWorkOrderIdOrderByChangedAtAsc(Long id); }
